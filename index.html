@@ -11,155 +11,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <nav id="navbar">
-    <header>Python Documentation</header> 
-      <ul>
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#Hello_world!">Hello world!</a></li>
-        <li><a class="nav-link" href="#White_space">White space</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
-        <li><a class="nav-link" href="#if-else_statement">if-else statement</a></li>
-        <li><a class="nav-link" href="#for_statement">for statement</a></li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li><a class="nav-link" href="#Exception_handling">Exception handling</a></li>
-        <li><a class="nav-link" href="#Functions">Functions</a></li>
-        <li><a class="nav-link" href="#Reference">Reference</a></li>
-      </ul>
-  </nav>
+    <nav id="navbar">
+        <header>Python Documentation</header> 
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Hello_world!">Hello world!</a></li>
+            <li><a class="nav-link" href="#White_space">White space</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#if-else_statement">if-else statement</a></li>
+            <li><a class="nav-link" href="#for_statement">for statement</a></li>
+            <li><a class="nav-link" href="#while_statement">while statement</a></li>
+            <li><a class="nav-link" href="#Exception_handling">Exception handling</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
     <main id="main-doc">
-      <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-          <article>
-            <p>
-              Python is a high-level, object-orientated, interpreted, dynamically typed programming language. The syntax is simple to understand, making it a good language for 
-              beginners, as well as experienced professionals. The Python interpreter and the extensive standard library are freely available in source or binary form for all 
-              major platforms from the Python web site, <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>, and may be freely distributed. The same 
-              site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
-            </p> 
-          </article>
-      </section>
-      <section class="main-section" id="Hello_world!">
-        <header>Hello world!</header>
-          <article>
-            <p>
-              To get started with writing Python, open the interpreter and write
-              your first "Hello world" Python code:
-            </p>
-            <code>print("Hello world!")</code>
-            <p>Run the code to see Hello world get printed to the output!</p>
-          </article>
-      </section>
-      <section class="main-section" id="White_space">
-        <header>White space</header>
-          <article>
-            <p>Python does not contain any beginning or end block markers. Instead, blocks must be correctly indented (usually 4 spaces) to delineate them.</p>
-            <code>def function1():
-            &nbsp;&nbsp;&nbsp;&nbsp;print("Hi")
-            </code>
-          </article>
-      </section>
-      <section class="main-section" id="Variables">
-        <header>Variables</header>
-          <article>
-            <p>Python does not have types of variables. The values that are assigned to have different types, and variables can be assigned different types of values.</p>
-           <code>x = "hi"
-            x = 90
-            x = True
-            </code>
-            <p>The different types of values that a variable can be assigned are:</p>
-            <ul>
-              <li>numbers</li>
-              <li>booleans</li>
-              <li>strings</li>
-              <li>ranges</li>
-              <li>tuples</li>
-              <li>lists</li>
-              <li>None</li>
-            </ul>
-          </article>
-      </section>
-      <section class="main-section" id="if-else_statement">
-        <header>if-else statement</header>
-          <article>
-            <p>
-              Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false, or the elif
-              clause to execute a statement if the condition is false but another is true. An if statement looks as follows:
-            </p>
-            <code>cheese = "parmesan"
-            if cheese == "mozzarella":
-            &nbsp;&nbsp;&nbsp;&nbsp;print("The classic Italian cheese.")
-            elif cheese == "cheddar":
-            &nbsp;&nbsp;&nbsp;&nbsp;print("Orange or white? Sharp or mild?")  
-            else:
-            &nbsp;&nbsp;&nbsp;&nbsp;print("Your cheese is not in our list, please check later.")
-            </code>
-          </article>
-      </section>
-      <section class="main-section" id="for_statement">
-        <header>for statement</header>
-          <article>
-            <p>A for statement executes its statements as many times as determined at time of execution. A for statement looks as follows:</p>
-            <code>for i in range(5):
-            &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
-            for i in range(23, 32, 2):
-            &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
-            for i in 'Greece':
-            &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
-            </code> 
-          </article>
-      </section>
-      <section class="main-section" id="while_statement">
-        <header>while statement</header>
-        <article>
-          <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
-          <code>while x &lt; 10:
-          &nbsp;&nbsp;&nbsp;&nbsp;x += 3
-          &nbsp;&nbsp;&nbsp;&nbsp;print(x)
-          </code>
-        </article>
-      </section>
-      <section class="main-section" id="Exception_handling">
-        <header>Exception handling</header>
-        <article>
-          <p>Here are the different keywords used in Python to deal with exceptions.</p>
-          <code>raise Exception('ErrorNotFound')
-          raise NotImplentedError()
-          try:
-          &nbsp;&nbsp;&nbsp;&nbsp;raise Exception('TooManyFries')
-          except:
-          &nbsp;&nbsp;&nbsp;&nbsp;print("Exception found!")
-          try:
-          &nbsp;&nbsp;&nbsp;&nbsp;raise Exception('Kaput')
-          except ValueNotFound as v:
-          &nbsp;&nbsp;&nbsp;&nbsp;print('ValueNotFound:', v)
-          finally:
-          &nbsp;&nbsp;&nbsp;&nbsp;print("Complete")
-          </code>
-        </article>
-      </section>
-      <section class="main-section" id="Functions">
-        <header>Functions</header>
-        <article>
-          <p>Functions can be defined with different names and inputs to be run inside of code. Here are two examples:</p>
-          <code>def Area(l, w):
-          &nbsp;&nbsp;&nbsp;&nbsp;return l*w
-          def Fibonacci(x):
-          &nbsp;&nbsp;&nbsp;&nbsp;if x &lt; 2 and x &gt; -1
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x
-          &nbsp;&nbsp;&nbsp;&nbsp;return Fibonacci(x - 1) + Fibonacci(x - 2)
-          </code>
-        </article>
-      </section>
-      <section class="main-section" id="Reference">
-        <header>Reference</header>
-          <article>
-            <p>All the documentation in this page is taken from</p>
-            <ul>
-              <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">docs.python.org</a></li>
-              <li><a href="https://moss.cs.iit.edu/cs331/bauer/" target="_blank">moss.cs.iit.edu</a></li>
-            </ul>
-          </article>
-      </section>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Python is a high-level, object-orientated, interpreted, dynamically typed programming language. The syntax is simple to understand, making it a good language for 
+                    beginners, as well as experienced professionals. The Python interpreter and the extensive standard library are freely available in source or binary form for all 
+                    major platforms from the Python web site, <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>, and may be freely distributed. The same 
+                    site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+                </p> 
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world!">
+            <header>Hello world!</header>
+            <article>
+                <p>
+                    To get started with writing Python, open the interpreter and write
+                    your first "Hello world" Python code:
+                </p>
+                <code>print("Hello world!")</code>
+                <p>Run the code to see Hello world get printed to the output!</p>
+            </article>
+        </section>
+        <section class="main-section" id="White_space">
+            <header>White space</header>
+            <article>
+                <p>Python does not contain any beginning or end block markers. Instead, blocks must be correctly indented (usually 4 spaces) to delineate them.</p>
+                <code>def function1():
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Hi")
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Python does not have types of variables. The values that are assigned to have different types, and variables can be assigned different types of values.</p>
+                <code>x = "hi"
+                x = 90
+                x = True
+                </code>
+                <p>The different types of values that a variable can be assigned are:</p>
+                <ul>
+                    <li>numbers</li>
+                    <li>booleans</li>
+                    <li>strings</li>
+                    <li>ranges</li>
+                    <li>tuples</li>
+                    <li>lists</li>
+                    <li>None</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="if-else_statement">
+            <header>if-else statement</header>
+            <article>
+                <p>
+                    Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false, or the elif
+                    clause to execute a statement if the condition is false but another is true. An if statement looks as follows:
+                </p>
+                <code>cheese = "parmesan"
+                if cheese == "mozzarella":
+                &nbsp;&nbsp;&nbsp;&nbsp;print("The classic Italian cheese.")
+                elif cheese == "cheddar":
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Orange or white? Sharp or mild?")  
+                else:
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Your cheese is not in our list, please check later.")
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="for_statement">
+            <header>for statement</header>
+            <article>
+                <p>A for statement executes its statements as many times as determined at time of execution. A for statement looks as follows:</p>
+                <code>for i in range(5):
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
+                for i in range(23, 32, 2):
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
+                for i in 'Greece':
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)  
+                </code> 
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <article>
+                <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+                <code>while x &lt; 10:
+                &nbsp;&nbsp;&nbsp;&nbsp;x += 3
+                &nbsp;&nbsp;&nbsp;&nbsp;print(x)
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Exception_handling">
+            <header>Exception handling</header>
+            <article>
+                <p>Here are the different keywords used in Python to deal with exceptions.</p>
+                <code>raise Exception('ErrorNotFound')
+                raise NotImplentedError()
+                try:
+                &nbsp;&nbsp;&nbsp;&nbsp;raise Exception('TooManyFries')
+                except:
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Exception found!")
+                try:
+                &nbsp;&nbsp;&nbsp;&nbsp;raise Exception('Kaput')
+                except ValueNotFound as v:
+                &nbsp;&nbsp;&nbsp;&nbsp;print('ValueNotFound:', v)
+                finally:
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Complete")
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>Functions can be defined with different names and inputs to be run inside of code. Here are two examples:</p>
+                <code>def Area(l, w):
+                &nbsp;&nbsp;&nbsp;&nbsp;return l*w
+                def Fibonacci(x):
+                &nbsp;&nbsp;&nbsp;&nbsp;if x &lt; 2 and x &gt; -1
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x
+                &nbsp;&nbsp;&nbsp;&nbsp;return Fibonacci(x - 1) + Fibonacci(x - 2)
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>All the documentation in this page is taken from</p>
+                <ul>
+                    <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">docs.python.org</a></li>
+                    <li><a href="https://moss.cs.iit.edu/cs331/bauer/" target="_blank">moss.cs.iit.edu</a></li>
+                </ul>
+            </article>
+        </section>
     </main>  
 </body>
 </html>
